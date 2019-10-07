@@ -12,6 +12,6 @@ if (!!window.SharedWorker) {
 
   myWorker.port.onmessage = function(e) {
     result2.textContent = e.data;
-    console.log('Message received from worker');
+    console.log('Message received from worker'+e.data);
   }
 }
